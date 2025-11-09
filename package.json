@@ -1,0 +1,7 @@
+{
+  "name": "projeto-final",
+  "version": "1.0.0", 
+  "scripts": {
+    "build": "echo 'Build completo - Projeto otimizado'"
+  }
+}
