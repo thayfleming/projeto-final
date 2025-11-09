@@ -3,11 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Final - Faculdade</title>
+    <title>Projeto Final - Faculdade | Acessibilidade WCAG 2.1 AA</title>
+    <meta name="description" content="Projeto final da faculdade com foco em acessibilidade web seguindo as diretrizes WCAG 2.1 nível AA">
+    <meta name="keywords" content="acessibilidade, WCAG, faculdade, projeto final, HTML semântico">
+    <meta name="author" content="Seu Nome">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="src/css/style.css">
+    
+    <!-- Preload para melhor performance -->
+    <link rel="preload" href="src/css/style.css" as="style">
+    <link rel="preload" href="src/js/main.js" as="script">
 </head>
 <body>
-    <h1>Projeto Final - Em Desenvolvimento</h1>
+    <!-- Skip Link para leitores de tela -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Cabeçalho -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Navegação principal">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Projeto Final</h1>
+                </div>
+                
+                <ul class="nav-menu" role="menubar">
+                    <li role="none">
+                        <a href="#inicio" role="menuitem" tabindex="0">Início</a>
+                    </li>
+                    <li role="none">
+                        <a href="#sobre" role="menuitem" tabindex="0">Sobre</a>
+                    </li>
+                    <li role="none">
+                        <a href="#acessibilidade" role="menuitem" tabindex="0">Acessibilidade</a>
+                    </li>
+                    <li role="none">
+                        <a href="#contato" role="menuitem" tabindex="0">Contato</a>
+                    </li>
+                </ul>
+
+                <!-- Controles de Tema -->
+                <div class="theme-controls" aria-label="Controles de tema">
+                    <button class="theme-btn" data-theme="default" aria-pressed="true">
+                        🌞 Padrão
+                    </button>
+                    <button class="theme-btn" data-theme="dark" aria-pressed="false">
+                        🌙 Escuro
+                    </button>
+                    <button class="theme-btn" data-theme="high-contrast" aria-pressed="false">
+                        ⚫ Alto Contraste
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="main-content" role="main" tabindex="-1">
+        <section id="inicio" aria-labelledby="inicio-title">
+            <div class="container">
+                <h1 id="inicio-title">Bem-vindo ao Projeto Final</h1>
+                <p>Este projeto demonstra a implementação de acessibilidade web seguindo as diretrizes WCAG 2.1 nível AA.</p>
+                
+                <div class="features-grid">
+                    <article class="feature-card" tabindex="0">
+                        <h2>♿ Acessibilidade Total</h2>
+                        <p>Navegação por teclado, alto contraste, suporte a leitores de tela e estrutura semântica.</p>
+                    </article>
+                    
+                    <article class="feature-card" tabindex="0">
+                        <h2>🎨 Temas Acessíveis</h2>
+                        <p>Modo escuro e alto contraste que mantêm os padrões de acessibilidade.</p>
+                    </article>
+                    
+                    <article class="feature-card" tabindex="0">
+                        <h2>⌨️ Navegação por Teclado</h2>
+                        <p>Use Tab, Shift+Tab e atalhos para navegar facilmente pelo site.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" aria-labelledby="sobre-title">
+            <div class="container">
+                <h2 id="sobre-title">Sobre o Projeto</h2>
+                <p>Este projeto foi desenvolvido como trabalho final da faculdade, com foco em:</p>
+                
+                <ul aria-label="Características do projeto">
+                    <li>Implementação completa das diretrizes WCAG 2.1 AA</li>
+                    <li>Controle de versão com Git Flow</li>
+                    <li>Otimização para produção</li>
+                    <li>Documentação profissional</li>
+                </ul>
+
+                <h3>Atalhos de Teclado</h3>
+                <div class="keyboard-shortcuts">
+                    <div class="shortcut-item">
+                        <kbd>Alt</kbd> + <kbd>1</kbd>
+                        <span>Ir para o conteúdo principal</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <kbd>Alt</kbd> + <kbd>2</kbd>
+                        <span>Ir para a navegação</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <kbd>Alt</kbd> + <kbd>T</kbd>
+                        <span>Alternar entre temas</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <kbd>Tab</kbd>
+                        <span>Navegar para o próximo elemento</span>
+                    </div>
+                    <div class="shortcut-item">
+                        <kbd>Shift</kbd> + <kbd>Tab</kbd>
+                        <span>Navegar para o elemento anterior</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="acessibilidade" aria-labelledby="acessibilidade-title">
+            <div class="container">
+                <h2 id="acessibilidade-title">Recursos de Acessibilidade</h2>
+                
+                <div class="accessibility-features">
+                    <div class="feature-item">
+                        <h3>🎯 Foco Visível</h3>
+                        <p>Todos os elementos interativos possuem indicadores de foco claros e visíveis.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <h3>📖 Alto Contraste</h3>
+                        <p>Rácio de contraste mínimo de 4.5:1 para texto normal e 3:1 para texto grande.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <h3>🔊 Leitores de Tela</h3>
+                        <p>Estrutura semântica e atributos ARIA para compatibilidade com leitores de tela.</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <h3>⌨️ Navegação Completa</h3>
+                        <p>Todo o site pode ser navegado apenas com o teclado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" aria-labelledby="contato-title">
+            <div class="container">
+                <h2 id="contato-title">Contato</h2>
+                
+                <form id="contact-form" aria-labelledby="contato-title">
+                    <div class="form-group">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2024 Projeto Final - Faculdade. Todos os direitos reservados.</p>
+            <p>Desenvolvido com foco em acessibilidade e boas práticas web.</p>
+            <div class="footer-links">
+                <a href="#politica-privacidade">Política de Privacidade</a>
+                <a href="#acessibilidade">Acessibilidade</a>
+                <a href="#mapa-site">Mapa do Site</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
     <script src="src/js/main.js"></script>
 </body>
 </html>
