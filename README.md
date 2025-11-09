@@ -21,4 +21,5 @@ projeto-final/
 └── README.md
 
 ## Autor
-[Seu Nome] - Faculdade
+Thayna Fleming
+
