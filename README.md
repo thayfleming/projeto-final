@@ -13,3 +13,9 @@ Projeto com acessibilidade WCAG 2.1 AA e GitFlow.
 - Modo escuro
 
 ## 📦 Estrutura
+projeto-final/
+├── index.html
+├── src/
+│ ├── css/style.css
+│ └── js/main.js
+└── README.md
